@@ -1,0 +1,98 @@
+body {
+  color: #313131;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 150px;
+  background-color: transparent;
+  box-shadow: 0 0.25rem 0.85rem 0.125rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.3rem;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  align-items: center;
+}
+
+.title h3 {
+  margin: 10px;
+}
+
+.hr {
+  width: 100%;
+}
+
+form {
+  width: 90%;
+  padding: 0 5%;
+  margin: 0 auto;
+  border-bottom: 1px solid lightgray;
+}
+
+.input-job {
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
+  border: 0;
+  font-size: 1rem;
+  padding: 0;
+  outline: none;
+  font-style: italic;
+}
+
+.input-job:focus {
+  outline: none;
+}
+
+.job-container {
+  list-style: none;
+  width: 98%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.checkbox {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.job-container li label:hover {
+  cursor: pointer;
+}
+
+.job-container li {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.btn-remove-container {
+  width: 100%;
+}
+
+.btn-remove {
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  color: gray;
+}
