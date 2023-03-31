@@ -91,7 +91,7 @@ form {
   list-style: none;
   width: 98%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .completed {
@@ -106,6 +106,9 @@ form {
 .job-container li label {
   font-size: 14px;
   font-family: 'Times New Roman', Times, serif;
+  border: none;
+  outline: none;
+  padding: 5px 5px;
 }
 
 .job-container li label:hover {
@@ -119,7 +122,16 @@ form {
   grid-template-columns: 10% 70% 10% 5%;
   align-items: center;
   padding: 10px 0;
+  margin: 15px auto;
   border-bottom: 1px solid lightgray;
+}
+
+.bg-pink {
+  background-color: rgb(240, 240, 196);
+}
+
+.edit-mode {
+  cursor: text !important;
 }
 
 .text-green {
