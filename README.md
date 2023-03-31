@@ -34,7 +34,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome book] <a name="about-project">
+# 📖 [To do list] <a name="about-project">
 Hello , this a simple To do list project</a>
 
 [Basir elham's To do list project] is an amazing productiivity tool that provides some basic functionalities. It enable users to display list of tasks, add task, delete task and mark task as completed when the need arise.
