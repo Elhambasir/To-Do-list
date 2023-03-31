@@ -150,7 +150,7 @@ To Do List: mobile-first approach & responsive on desktop version and bigger siz
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
-### Hi, there, I'm Rassel - aka [Full Stack Developer] [Check my portfolio](https://elhambasir.github.io/MyPortfolio/)
+### Hi, there, I'm Basir - aka [Full Stack Developer] [Check my portfolio](https://elhambasir.github.io/MyPortfolio/)
 
 To get a local copy up and running, follow these steps.
 
@@ -168,7 +168,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git git@github.com:RHK-MICROVERSE/To-Do-List.git
+  git git@github.com:Elhambasir/To-Do-List.git
 ```
 
 
