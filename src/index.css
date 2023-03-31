@@ -166,3 +166,8 @@ form {
   height: 60px;
   color: gray;
 }
+
+.btn-remove:hover {
+  border: 1px solid white;
+  color: gray;
+}
