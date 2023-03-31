@@ -1,6 +1,7 @@
 import './index.css';
 // import _ from 'lodash';
 import Element from '../modules/element.js';
+import { removeAllCompleted, updateTask } from '../modules/status.js';
 import Task from '../modules/task.js';
 
 const taskObject1 = new Task();
@@ -22,26 +23,29 @@ window.addEventListener('load', () => {
 });
 
 document.querySelectorAll('.checkbox').forEach((element) => {
-  element.nextElementSibling.addEventListener('focus', (e) => {
+  element.nextElementSibling.addEventListener('click', (e) => {
     e.target.parentElement.setAttribute('style', 'background-color:lightgray;');
     e.target.nextElementSibling.classList.remove('fa-trash', 'fa-xs', 'fa-grip-lines');
     e.target.nextElementSibling.classList.add('fa-trash', 'fa-xs', 'delete');
-  });
-  element.nextElementSibling.addEventListener('blur', (e) => {
-    e.target.nextElementSibling.addEventListener('mousedown', () => {
+    e.target.nextElementSibling.addEventListener('click', () => {
       taskObject1.removeItem(element.getAttribute('index'));
     });
-    e.target.parentElement.setAttribute('style', 'background-color:white;');
-    e.target.nextElementSibling.classList.remove('fa-trash', 'fa-xs', 'delete');
-    e.target.nextElementSibling.classList.add('fa-trash', 'fa-xs', 'fa-grip-lines');
+
+    document.querySelectorAll('.checkbox').forEach((element) => {
+      if (element.nextElementSibling !== e.currentTarget) {
+        element.parentElement.setAttribute('style', 'background-color:white;');
+        element.nextElementSibling.nextElementSibling.classList.add('fa-trash', 'fa-xs', 'fa-grip-lines');
+        element.nextElementSibling.nextElementSibling.classList.remove('fa-trash', 'fa-xs', 'delete');
+      }
+    });
   });
 });
 document.querySelectorAll('.checkbox').forEach((element) => {
   element.addEventListener('change', (e) => {
     if (e.currentTarget.checked === true) {
-      taskObject1.updateTask(element.nextElementSibling.textContent, true);
+      updateTask(element.nextElementSibling.textContent, true);
     } else {
-      taskObject1.updateTask(element.nextElementSibling.textContent, false);
+      updateTask(element.nextElementSibling.textContent, false);
     }
   });
 });
@@ -66,4 +70,8 @@ document.querySelectorAll('label').forEach((element) => {
       }
     }
   });
+});
+
+elementObject1.removeButton.addEventListener('click', () => {
+  removeAllCompleted();
 });
