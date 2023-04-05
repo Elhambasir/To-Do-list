@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <script src="https://kit.fontawesome.com/ddf0568315.js" crossorigin="anonymous"></script>
+  <script src="https://fontawesome.com/icons/arrow-turn-down-left?f=classic&s=solid" crossorigin="anonymous"></script>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+
+<body>
+  <main class="container">
+    <div class="sub-container">
+      <div class="title">
+        <h3>Today's To Do</h3>
+        <button><i class="fas fa-refresh"></i></button>
+      </div>
+      <hr class="hr">
+      <form action="" id="job-form">
+        <input type="text" name="job" class="input-job" placeholder="Add to your list">
+        <button type="submit" id="addNew"><i class="fas fa-arrow-left"></i></button>
+      </form>
+      <div class="job-container">
+      </div>
+      <div class="btn-remove-container">
+        <button type="submit" class="btn-remove" id="clear-job-btn">
+          Clear All Completed
+        </button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
