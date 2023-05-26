@@ -146,7 +146,7 @@ To Do List: mobile-first approach & responsive on desktop version and bigger siz
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-[Live Demo Link](https://Elhambasir.github.io/To-Do-List/)
+[Live Demo Link](https://elhambasir.github.io/To-Do-list/)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
